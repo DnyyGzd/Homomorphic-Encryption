@@ -12,3 +12,7 @@ cd SEAL-4.1.1/
 cmake -S . -B build
 cmake --build build
 sudo cmake --install build
+
+cd native/examples/
+cmake -S . -B build
+cmake --build build
