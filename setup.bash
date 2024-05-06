@@ -22,5 +22,6 @@ git clone https://github.com/microsoft/EVA.git
 
 cd ~/Documents/EVA/
 git submodule update --init
+sed -i -e 's/find_package(SEAL 3.6 REQUIRED)/#find_package(SEAL 3.6 REQUIRED)\nfind_package(SEAL 4.1 REQUIRED)/' CMakeLists.txt
 cmake .
 make -j
