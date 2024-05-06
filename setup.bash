@@ -14,7 +14,7 @@ git clone -b v4.1.1 https://github.com/microsoft/SEAL.git
 
 cd ~/Documents/SEAL/
 cmake -DSEAL_BUILD_EXAMPLES=ON -DSEAL_BUILD_TESTS=ON -DSEAL_BUILD_BENCH=ON -DSEAL_THROW_ON_TRANSPARENT_CIPHERTEXT=OFF .
-cmake -j
+make -j
 sudo make install
 
 cd ~/Documents/
