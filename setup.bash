@@ -25,3 +25,6 @@ git submodule update --init
 sed -i -e 's/find_package(SEAL 3.6 REQUIRED)/#find_package(SEAL 3.6 REQUIRED)\nfind_package(SEAL 4.1 REQUIRED)/' CMakeLists.txt
 cmake .
 make -j
+python3 -m pip install -e python/
+python3 python/setup.py bdist_wheel --dist-dir='.'
+python3 tests/all.py
