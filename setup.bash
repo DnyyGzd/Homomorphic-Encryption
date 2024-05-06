@@ -10,10 +10,9 @@ sudo update-alternatives --install /usr/bin/cc cc /usr/bin/clang 100
 sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang++ 100
 
 cd ~/Documents/
-wget https://github.com/microsoft/SEAL/archive/refs/tags/v4.1.1.zip
-unzip v4.1.1.zip
+git clone -b v4.1.1 https://github.com/microsoft/SEAL.git
 
-cd ~/Documents/SEAL-4.1.1/
+cd ~/Documents/SEAL/
 cmake -S . -B build -DSEAL_BUILD_EXAMPLES=ON -DSEAL_BUILD_TESTS=ON -DSEAL_BUILD_BENCH=ON -DSEAL_THROW_ON_TRANSPARENT_CIPHERTEXT=OFF
 cmake --build build
 sudo cmake --install build
