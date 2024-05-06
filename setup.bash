@@ -22,3 +22,5 @@ git clone https://github.com/microsoft/EVA.git
 
 cd ~/Documents/EVA/
 git submodule update --init
+cmake .
+make -j
