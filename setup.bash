@@ -9,10 +9,6 @@ wget https://github.com/microsoft/SEAL/archive/refs/tags/v4.1.1.zip
 unzip v4.1.1.zip
 
 cd SEAL-4.1.1/
-cmake -S . -B build
+cmake -S . -B build -DSEAL_BUILD_EXAMPLES=ON -DSEAL_BUILD_TESTS=ON -DSEAL_BUILD_BENCH=ON
 cmake --build build
 sudo cmake --install build
-
-cd native/examples/
-cmake -S . -B build
-cmake --build build
