@@ -2,7 +2,7 @@
 
 sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean
 
-sudo apt install -y curl git tar unzip zip zstd \
+sudo apt install -y curl git python3-pip tar unzip zip zstd \
                     build-essential clang cmake \
                     libboost-all-dev libprotobuf-dev protobuf-compiler
 
