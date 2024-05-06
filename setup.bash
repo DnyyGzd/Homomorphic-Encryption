@@ -13,6 +13,12 @@ cd ~/Documents/
 git clone -b v4.1.1 https://github.com/microsoft/SEAL.git
 
 cd ~/Documents/SEAL/
-cmake -S . -B build -DSEAL_BUILD_EXAMPLES=ON -DSEAL_BUILD_TESTS=ON -DSEAL_BUILD_BENCH=ON -DSEAL_THROW_ON_TRANSPARENT_CIPHERTEXT=OFF
-cmake --build build
-sudo cmake --install build
+cmake -DSEAL_BUILD_EXAMPLES=ON -DSEAL_BUILD_TESTS=ON -DSEAL_BUILD_BENCH=ON -DSEAL_THROW_ON_TRANSPARENT_CIPHERTEXT=OFF .
+cmake -j
+sudo make install
+
+cd ~/Documents/
+git clone https://github.com/microsoft/EVA.git
+
+cd ~/Documents/EVA/
+git submodule update --init
