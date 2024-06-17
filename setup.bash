@@ -23,3 +23,6 @@ cmake ..
 make
 sudo make install
 cd ../..
+
+sudo apt install mypy
+stubgen -m openfhe -o stubs
