@@ -13,10 +13,10 @@ Create a directory named .vscode within the project directory and generate a set
 ```json
 {
     "python.analysis.extraPaths": [
-        "stubs"
+        "path/to/stubs"
     ],
     "python.autoComplete.extraPaths": [
-        "stubs"
+        "path/to/stubs"
     ]
 }
 ```
