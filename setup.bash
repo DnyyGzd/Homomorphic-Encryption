@@ -24,5 +24,7 @@ make
 sudo make install
 cd ../..
 
+export PYTHONPATH=$(pwd)/openfhe-python/build:$PYTHONPATH
+
 sudo apt install mypy
 stubgen -m openfhe -o stubs
