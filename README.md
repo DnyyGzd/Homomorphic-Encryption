@@ -7,7 +7,7 @@ wget https://raw.githubusercontent.com/DnyyGzd/Homomorphic-Encryption/main/setup
 bash setup.bash
 ```
 
-Add to ~/.bashrc at the end the following content (replace path/to/).
+Append the following content to the end of ~/.bashrc (replace path/to/) and reboot.
 ```
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib"
 export PYTHONPATH="$PYTHONPATH:path/to/openfhe-python/build"
