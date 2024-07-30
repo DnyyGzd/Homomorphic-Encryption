@@ -9,7 +9,8 @@ bash setup.bash
 
 Add to ~/.bashrc at the end the following content (replace path/to/).
 ```
-export PYTHONPATH=path/to/openfhe-python/build:$PYTHONPATH
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib"
+export PYTHONPATH="$PYTHONPATH:path/to/openfhe-python/build"
 ```
 
 ## VSCode Pylance
